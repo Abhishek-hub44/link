@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Antoiler</title>
     <script>
         window.onload = function () {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -11,7 +11,7 @@
             if (/android|windows/i.test(userAgent)) {
                 // Redirect to Play Store
                 window.location.href = "https://play.google.com/store/apps/details?id=com.tc.antoiler";
-            } else if (/iPad|iPhone|iPod|mac/.test(userAgent) && !window.MSStream) {
+            } else if (/iPad|iPhone|iPod|MacIntel|Macintosh/.test(userAgent) && !window.MSStream) {
                 // Redirect to App Store
                 window.location.href = "https://apps.apple.com/in/app/antoiler-kaam-ka-naya-naam/id6740770121 ";
             } else {
